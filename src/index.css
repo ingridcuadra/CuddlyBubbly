@@ -2,5 +2,34 @@
     margin-left: 25px;
 }
 .navbar-brand{
-    margin-right: 25px;
+    margin-right: 160px;
+    font-size: 25px;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.form-search{
+    margin-right: 50px;
+}
+h1{
+    font-size: 23px;
+    text-align: center;
+    margin: 10px;
+}
+.btn-cart{
+    background-color: aliceblue;
+}
+.card{
+    margin: 10px;
+    border: solid 2px rgb(200, 200, 235);
+}
+.container-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    margin: 10px;
+}
+.cant{
+    margin: 10px;
 }
