@@ -1,10 +1,9 @@
 import React from 'react';
-import { HiOutlineShoppingCart } from 'react-icons/fa';
 
 const CartWidget = () => {
     return (
         <div>
-            <HiOutlineShoppingCart />
+            <img className="cart-icon" src="https://img.icons8.com/office/37/000000/shopping-cart.png"/>
         </div>
     );
 }
