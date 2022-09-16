@@ -16,11 +16,15 @@ const ItemListContainer = (props) => {
           .finally(() => setLoading(false))
     }, []);
 
+    const onAdd = (quantity) => {
+        alert(`Agregaste ${quantity} producto(s) al carrito`)
+    }
+
     return (
         <div>
             <h1>{props.greeting}</h1>
             {loading ? <Loader /> : <ItemList products={arrayProducts} />}
-            <ItemCount />
+            <ItemCount initial={1} stock={10} onAdd={onAdd} />
         </div>
     );
 }

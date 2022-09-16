@@ -19,6 +19,11 @@ h1{
 .btn-cart{
     background-color: aliceblue;
 }
+.container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .card{
     margin: 10px;
     border: solid 2px rgb(200, 200, 235);
