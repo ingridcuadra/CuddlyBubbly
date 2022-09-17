@@ -92,10 +92,9 @@ const products = [
 const getProducts = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(products);
+        resolve(products[9]);
       }, 2000);
     })
-  }
-  
+}
 
 export default getProducts;

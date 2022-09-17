@@ -24,10 +24,10 @@ h1{
     justify-content: center;
     flex-wrap: wrap;
 }
-.card{
-    margin: 10px;
-    border: solid 2px rgb(200, 200, 235);
-}
+
+
+
+
 .container-count{
     display: flex;
     flex-direction: row;
@@ -37,4 +37,34 @@ h1{
 }
 .cant{
     margin: 10px;
+}
+/* Estilos para Detail (no definitivos) */
+.detail-container{
+    margin: 30px;
+    display: grid;
+    grid-template-areas:
+    "img title title"
+    "img description description"
+    "stock stock count"
+    "price price count";
+}
+.card-img-top{
+    grid-area: img;
+}
+.card-title{
+    grid-area: title;
+}
+.description{
+    grid-area: description;
+}
+.price{
+    grid-area: price;
+}
+.stock{
+    grid-area: stock;
+}
+.card{
+    grid-area: count;
+    margin: 10px;
+    border: solid 2px rgb(200, 200, 235);
 }
