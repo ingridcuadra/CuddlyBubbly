@@ -11,10 +11,8 @@
 .form-search{
     margin-right: 50px;
 }
-h1{
-    font-size: 23px;
-    text-align: center;
-    margin: 10px;
+Link{
+    text-decoration: none;
 }
 .btn-cart{
     background-color: aliceblue;
@@ -23,48 +21,37 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-
-
-
+.card-datail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 800px;
+}
+.img-detail-container{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.img-detail{
+    width: 200px;
+    height: 200px;
+    border-radius: 13px;
+    box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+    -webkit-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+    -moz-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+}
 .container-count{
+    grid-area: count;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     place-items: center;
     margin: 10px;
 }
 .cant{
     margin: 10px;
-}
-/* Estilos para Detail (no definitivos) */
-.detail-container{
-    margin: 30px;
-    display: grid;
-    grid-template-areas:
-    "img title title"
-    "img description description"
-    "stock stock count"
-    "price price count";
-}
-.card-img-top{
-    grid-area: img;
-}
-.card-title{
-    grid-area: title;
-}
-.description{
-    grid-area: description;
-}
-.price{
-    grid-area: price;
-}
-.stock{
-    grid-area: stock;
-}
-.card{
-    grid-area: count;
-    margin: 10px;
-    border: solid 2px rgb(200, 200, 235);
 }

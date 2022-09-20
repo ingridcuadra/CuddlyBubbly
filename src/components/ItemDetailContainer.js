@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
         getProducts()
           .then((response) => setDetailProduct(response))
           .catch((err) => console.error(err))
-    }, []);
+    });
 
     return (
         <>

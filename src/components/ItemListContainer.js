@@ -3,7 +3,7 @@ import ItemList from './ItemList';
 import getProducts from '../utils/products';
 import Loader from './Loader'
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
     const [arrayProducts, setArrayProducts] = useState([])
     const [loading, setLoading] = useState(false)
 
@@ -17,7 +17,6 @@ const ItemListContainer = (props) => {
 
     return (
         <div>
-            <h1>{props.greeting}</h1>
             {loading ? <Loader /> : <ItemList products={arrayProducts} />}
         </div>
     );

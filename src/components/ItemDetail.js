@@ -8,16 +8,24 @@ const ItemDetail = ( { product } ) => {
 
     return (
         <>
-            <div className="detail-container">
-                <img src={product.image} className="card-img-top" alt={product.name} />
-                <div className="card-body">
-                    <h5 className="card-title">{product.name}</h5>
-                    <p className="description">{product.description}</p>
-                    <p className="price">Precio: ${product.price}</p>
-                    <p className="stock">Stock disponible: {product.stock}</p>
+        <div className="card-datail-container">
+            <div className="card-datail-container card mb-3">
+                <div className="row g-0">
+                    <div className="img-detail-container col-md-4">
+                        <img src={product.image} className="img-detail" alt={product.name} />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title">{product.name}</h5>
+                            <p className="card-text">{product.description}</p>
+                            <p className="card-text">Precio: ${product.price}</p>
+                            <p className="card-text"><small className="text-muted">Stock disponible: {product.stock}</small></p>
+                            <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                        </div>
+                    </div>
                 </div>
-                <ItemCount initial={1} stock={10} onAdd={onAdd} />
             </div>
+        </div>
         </>
     );
 }
