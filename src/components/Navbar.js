@@ -7,17 +7,17 @@ const Navbar = () => {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <Link to="/"><a className="navbar-brand">Cuddly Bubbly 🧸</a></Link>
+            <Link className="navbar-brand" to="/">Cuddly Bubbly 🧸</Link>
             <div className="collapse navbar-collapse" id="navbarColor03">
               <ul className="navbar-nav me-auto">
                 <li className="nav-item">
-                  <Link to="category/1"><a className="nav-link">Novedades</a></Link>
+                  <Link className="nav-link" to="category/1">Novedades</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="category/2"><a className="nav-link">Conocenos</a></Link>
+                  <Link className="nav-link" to="category/2">Más vendidos</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="category/3"><a className="nav-link">Guía de compra</a></Link>
+                  <Link className="nav-link" to="category/3">Nuestra recomendación</Link>
                 </li>
               </ul>
               <form className="d-flex form-search">

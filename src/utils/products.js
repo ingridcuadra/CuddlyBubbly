@@ -1,11 +1,12 @@
-const products = [
+const Products = [
     {
         id: 1,
         image: "https://drive.google.com/uc?export=view&id=11uc-59GI0zaNrYU9JiZVh75HasVozs_Q",
         name: "Osito",
         description: "Osito incluye un peluche en forma de oso más una caja de infución de hierbas de 10 unidades.",
         price: 159.99,
-        stock: 10
+        stock: 10,
+        categoryId: 2
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const products = [
         name: "Yoon",
         description: "Yoon incluye un peluche en forma de gato más una caja de infución de manzanilla de 10 unidades.",
         price: 169.99,
-        stock: 10
+        stock: 10,
+        categoryId: 2
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const products = [
         name: "Chanito",
         description: "Chanito incluye un peluche en forma de lobo más una caja de infución de limón de 10 unidades.",
         price: 199.99,
-        stock: 10
+        stock: 10,
+        categoryId: 3
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const products = [
         name: "Subin",
         description: "Subin incluye un peluche en forma de foca más una caja de infución de cedrón de 10 unidades.",
         price: 169.99,
-        stock: 10
+        stock: 10,
+        categoryId: 2
     },
     {
         id: 5,
@@ -45,7 +49,8 @@ const products = [
         name: "Filix",
         description: "Filix incluye un peluche en forma de pato más una caja de infución de vainilla de 10 unidades.",
         price: 169.99,
-        stock: 10
+        stock: 10,
+        categoryId: 3
     },
     {
         id: 7,
@@ -53,7 +58,8 @@ const products = [
         name: "Bubbu",
         description: "Bubbu incluye un peluche en forma de oso más una caja de infución de té negro de 10 unidades.",
         price: 169.99,
-        stock: 10
+        stock: 10,
+        categoryId: 1
     },
     {
         id: 8,
@@ -69,7 +75,8 @@ const products = [
         name: "Hanny",
         description: "Hanny incluye un peluche en forma de ardilla más una caja de infución de frutos rojos de 10 unidades.",
         price: 199.99,
-        stock: 10
+        stock: 10,
+        categoryId: 3
     },
     {
         id: 10,
@@ -85,16 +92,9 @@ const products = [
         name: "Jumpy",
         description: "Jumpy incluye un peluche en forma de rana más una caja de influción de té verde de 10 unidades.",
         price: 169.99,
-        stock: 10
+        stock: 10,
+        categoryId: 1
     }
 ];
 
-const getProducts = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
-    })
-}
-
-export default getProducts;
+export default Products;
