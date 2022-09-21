@@ -52,6 +52,9 @@ Link{
     place-items: center;
     margin: 10px;
 }
+.btn{
+    margin: 3px;
+}
 .cant{
     margin: 10px;
 }
