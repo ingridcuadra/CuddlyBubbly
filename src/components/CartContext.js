@@ -17,16 +17,7 @@ const CartContextProvider = ({children}) => {
 
     const isInCart = (id) => cartList.find(product => product.id === parseInt(id)) ? true : false;
 
-    const removeItem = (id) => {
-        // setCartList(cartList.filter((product) => product.id !== parseInt(id)))
-        // setCartList(cartList.filter((product) => product.id !== id))
-        const newCartList = cartList.filter((product) => product.id !== parseInt(id))
-
-        setCartList(newCartList)
-
-        console.log(`estoy funcionando`)
-        console.log(newCartList)
-    }
+    const removeItem = (id) => setCartList(cartList.filter((product) => product.id !== id));
 
     const clear = () => setCartList([]);
 
