@@ -17,7 +17,7 @@ const Navbar = () => {
                   <Link className="nav-link" to="category/2">Más vendidos</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="category/3">Nuestra recomendación</Link>
+                  <Link className="nav-link" to="category/3">Nuestras recomendaciones</Link>
                 </li>
               </ul>
               <form className="d-flex form-search">

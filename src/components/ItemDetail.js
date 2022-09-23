@@ -16,7 +16,7 @@ const ItemDetail = ( { product } ) => {
 
     return (
         <>
-        <div className="card-datail-container">
+        <div className="datail-container">
             <div className="card-datail-container card mb-3">
                 <div className="row g-0">
                     <div className="img-detail-container col-md-4">
