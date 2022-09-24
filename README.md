@@ -17,7 +17,7 @@ Para inicializar la aplicación.
 
 ##  Library version
 
-`react v18.2.0`, `react-dom v18.2.0`, `react-router-dom v6.4.0`
+`react v18.2.0` `react-dom v18.2.0` `react-router-dom v6.4.0`
 
 ## Organización del código
 
