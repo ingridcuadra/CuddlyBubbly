@@ -21,6 +21,17 @@ Link{
 .cart-icon{
     margin-left: 10px;
 }
+.total-cart-icon{
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    padding: 2px 8px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: coral;
+    border-radius: 100%;
+    
+}
 .btn-cart{
     background-color: aliceblue;
 }
@@ -87,11 +98,6 @@ Link{
     justify-content: space-between;
     margin: 10px;
 }
-.img-cart-container{
-    display: flex;
-    justify-content: center;
-    place-items: center;
-}
 .btn-continue{
     margin-left: 13px;
 }
@@ -100,17 +106,23 @@ Link{
     justify-content: center;
     margin: 40px;
 }
-.img-cart{
-    width: 200px;
-    height: 200px;
-    border-radius: 13px;
-    box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
-    -webkit-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
-    -moz-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+.order-card{
+    position: absolute;
+    top: 208px;
+    right: 5px;
+    margin: 10px;
+}
+.order-title{
+    font-size: 23px;
+    text-decoration: overline;
+}
+.order-total{
+    text-decoration: overline;
 }
 .cart-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card-cart-container{
     display: flex;
@@ -121,4 +133,17 @@ Link{
 }
 .card-body-cart{
     margin-left: 20px;
+}
+.img-cart-container{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.img-cart{
+    width: 200px;
+    height: 200px;
+    border-radius: 13px;
+    box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+    -webkit-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
+    -moz-box-shadow: 4px 10px 12px 0px rgba(195,196,237,0.88);
 }
