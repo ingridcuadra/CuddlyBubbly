@@ -1,3 +1,10 @@
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #a0c4cf;
+    border-radius: 5px;
+}
 .navbar-brand{
     margin-right: 140px;
     font-size: 25px;
@@ -75,15 +82,23 @@ Link{
     margin: 20px;
     text-align: center;
 }
-.btn-delete-all{
+.buttons-cart{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     margin: 10px;
 }
 .img-cart-container{
     display: flex;
     justify-content: center;
     place-items: center;
+}
+.btn-continue{
+    margin-left: 13px;
+}
+.empty-cart{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
 }
 .img-cart{
     width: 200px;

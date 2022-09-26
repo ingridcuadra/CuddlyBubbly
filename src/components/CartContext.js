@@ -15,6 +15,26 @@ const CartContextProvider = ({children}) => {
         }
     }
 
+    const subtotalEachProd = (id) => {
+        let index = cartList.map(product => product.id).indexOf(id);
+        return cartList[index].price * cartList[index].quantity;
+    }
+
+    const subtotalPrice = () => {
+        let total = cartList.map(item => subtotalEachProd(item.id))
+        return total.reduce((previousValue, currentValue) => previousValue + currentValue);
+    }
+
+    const calcIVA = () => {
+        return subtotalPrice() * 0.21;
+    }
+
+    const totalPrice = () => {
+        return subtotalPrice() + calcIVA();
+    }
+
+    const totalProducts = () => cartList.reduce((counter, productoActual) => counter + productoActual.quantity, 0)
+
     const isInCart = (id) => cartList.find(product => product.id === parseInt(id)) ? true : false;
 
     const removeItem = (id) => setCartList(cartList.filter((product) => product.id !== id));
@@ -22,7 +42,7 @@ const CartContextProvider = ({children}) => {
     const clear = () => setCartList([]);
 
     return (
-        <CartContext.Provider value={{cartList, addItem, isInCart, removeItem, clear}}>
+        <CartContext.Provider value={{cartList, addItem, subtotalEachProd, subtotalPrice, calcIVA, totalPrice, totalProducts, isInCart, removeItem, clear}}>
             {children}
         </CartContext.Provider>
     )
