@@ -49,9 +49,9 @@ const Cart = () => {
             <div className="order-card card" style={{width: '18rem'}}>
                 <div className="card-body">
                     <h5 className="order-title card-title">Orden de compra</h5>
-                    <p className="card-text">Subtotal: ${subtotalPrice()}</p>
-                    <p className="card-text">IVA: ${calcIVA()}</p>
-                    <h5 className="order-total card-text">Total: ${totalPrice()}</h5>
+                    <p className="card-text">Subtotal: ${subtotalPrice().toFixed(2)}</p>
+                    <p className="card-text">IVA: ${calcIVA().toFixed(2)}</p>
+                    <h5 className="order-total card-text">Total: ${totalPrice().toFixed(2)}</h5>
                     <button className="btn btn-secondary" type="submit">Comprar ahora</button>
                 </div>
             </div>

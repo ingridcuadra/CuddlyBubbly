@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/utils/bdd.js
+/src/utils/getProducts.js
+/src/utils/products.js
+/src/utils/consultaLocal.js
 
 # testing
 /coverage

@@ -30,7 +30,7 @@ const CartContextProvider = ({children}) => {
     }
 
     const totalPrice = () => {
-        return subtotalPrice() + calcIVA();
+        return parseFloat(subtotalPrice()) + parseFloat(calcIVA());
     }
 
     const totalProducts = () => cartList.reduce((counter, productoActual) => counter + productoActual.quantity, 0)

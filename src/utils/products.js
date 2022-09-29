@@ -41,7 +41,8 @@ const Products = [
         name: "Binnie",
         description: "Binnie incluye un peluche en forma de cerdo más una caja de infución de petalos de rosa de 10 unidades.",
         price: 199.99,
-        stock: 10
+        stock: 10,
+        categoryId: 4
     },
     {
         id: 6,
@@ -59,7 +60,7 @@ const Products = [
         description: "Bubbu incluye un peluche en forma de oso más una caja de infución de té negro de 10 unidades.",
         price: 169.99,
         stock: 10,
-        categoryId: 1
+        categoryId: 4
     },
     {
         id: 8,
@@ -67,7 +68,8 @@ const Products = [
         name: "Rulito",
         description: "Rulito incluye un peluche en forma de hamster más una caja de infución de frutilla de 10 unidades.",
         price: 199.99,
-        stock: 10
+        stock: 10,
+        categoryId: 4
     },
     {
         id: 9,
@@ -84,7 +86,8 @@ const Products = [
         name: "Mimi",
         description: "Mimi incluye un peluche en forma de pollo más una caja de infución de arándanos de 10 unidades.",
         price: 199.99,
-        stock: 10
+        stock: 10,
+        categoryId: 4
     },
     {
         id: 11,
@@ -92,6 +95,42 @@ const Products = [
         name: "Jumpy",
         description: "Jumpy incluye un peluche en forma de rana más una caja de influción de té verde de 10 unidades.",
         price: 169.99,
+        stock: 10,
+        categoryId: 4
+    },
+    {
+        id: 12,
+        image: "https://drive.google.com/uc?export=view&id=19tnLLLv96BmuVH5u4tggUDjAyN85xkbg",
+        name: "Uparupa",
+        description: "Uparupa incluye un peluche en forma de ajolote más una caja de influción de rosa mosqueta y canela de 10 unidades.",
+        price: 209.99,
+        stock: 10,
+        categoryId: 1
+    },
+    {
+        id: 13,
+        image: "https://drive.google.com/uc?export=view&id=18uD5gP4DOIQLTYXM-ETLf3DNu0ZI-1jB",
+        name: "Jagu",
+        description: "Jagu incluye un peluche en forma de jaguar más una caja de influción de naranja de 10 unidades.",
+        price: 219.99,
+        stock: 10,
+        categoryId: 1
+    },
+    {
+        id: 14,
+        image: "https://drive.google.com/uc?export=view&id=19xI7yz9JCzjz60y3Thlf1kGsUK5lw4Lt",
+        name: "Elfi",
+        description: "Elfi incluye un peluche en forma de elefente más una caja de influción de matcha, menta y limón de 10 unidades.",
+        price: 219.99,
+        stock: 10,
+        categoryId: 1
+    },
+    {
+        id: 15,
+        image: "https://drive.google.com/uc?export=view&id=19sECOtjW9bcGTWj__vp6vL19BAxq8sGI",
+        name: "Catloween",
+        description: "Catloween incluye un peluche en forma de gato con motivo de calabazas más una caja de velas decorativas de 10 unidades.",
+        price: 239.99,
         stock: 10,
         categoryId: 1
     }

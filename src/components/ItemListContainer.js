@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList';
-import getProducts from '../utils/getProducts';
-import Products from '../utils/products';
 import Loader from './Loader';
 import { useParams } from 'react-router';
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from '../utils/firebaseConfig';
 
 const ItemListContainer = () => {
     const [arrayProducts, setArrayProducts] = useState([])
@@ -11,19 +11,24 @@ const ItemListContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        if(id){
-            setLoading(true)
-            getProducts(2000, Products.filter(product => product.categoryId === parseInt(id)))
-                .then((response) => setArrayProducts(response))
-                .catch((err) => console.error(err))
-                .finally(() => setLoading(false))
-        }else{
-            setLoading(true)
-            getProducts(2000, Products)
-                .then((response) => setArrayProducts(response))
-                .catch((err) => console.error(err))
-                .finally(() => setLoading(false))
+        setLoading(true)
+        const firestoreFetch = async () => {
+            let q
+            if (id) {
+                q = query(collection(db, "products"), where('categoryId', '==', parseInt(id)))
+            } else {
+                q = query(collection(db, "products"))
+            }
+            const querySnapshot = await getDocs(q);
+            const dataFromFirestore = querySnapshot.docs.map(document => ({
+                id: document.id,
+                ...document.data()
+            }))
+            setLoading(false)
+            return dataFromFirestore
         }
+        firestoreFetch()
+            .then(result => setArrayProducts(result))
     }, [id]);
 
     return (

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
-import getProducts from '../utils/getProducts';
-import Products from '../utils/products';
 import Loader from './Loader';
 import { useParams } from 'react-router';
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../utils/firebaseConfig';
 
 const ItemDetailContainer = () => {
     const [detailProduct, setDetailProduct] = useState({})
@@ -11,13 +11,14 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
     
     useEffect(() => {
-        getProducts(2000, Products.find(product => product.id === parseInt(id)))
-          .then((response) => {
-            setDetailProduct(response)
+        const docFetch = async () => {
+            const docRef = doc(db, "products", id);
+            const docSnap = await getDoc(docRef);
+            setDetailProduct(docSnap.data())
             setLoading(false)
-        })
-          .catch((err) => console.error(err))
-    });
+        }
+        docFetch()
+    }, [id]);
 
     return (
         <>
