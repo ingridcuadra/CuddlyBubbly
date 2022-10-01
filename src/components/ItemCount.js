@@ -12,10 +12,10 @@ const ItemCount = ( { initial, stock, onAdd} ) => {
     return (
         <>
             <div className="container-count">
-                <button disabled={cant >= stock} onClick={handleCant} className="btn-cart btn btn-secondary btn-sm" type="submit">+</button>
+                <button disabled={cant >= stock} onClick={handleCant} className="btn-cart btn btn-secondary btn-sm">+</button>
                 <p className="cant">{cant}</p>
-                <button disabled={cant <= 0} onClick={handleCantMin} className="btn-cart btn btn-secondary btn-sm" type="submit">-</button>
-                <button disabled={cant <= 0 || stock <= 0} onClick={() => onAdd(cant)} className="btn btn-secondary" type="submit">Añadir al carrito</button>
+                <button disabled={cant <= 0} onClick={handleCantMin} className="btn-cart btn btn-secondary btn-sm">-</button>
+                <button disabled={cant <= 0 || stock <= 0} onClick={() => onAdd(cant)} className="btn btn-secondary">Añadir al carrito</button>
             </div>
         </>
     );
