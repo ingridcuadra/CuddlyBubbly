@@ -14,7 +14,11 @@ const ItemDetailContainer = () => {
         const docFetch = async () => {
             const docRef = doc(db, "products", id);
             const docSnap = await getDoc(docRef);
-            setDetailProduct(docSnap.data())
+            const product = {
+                id: docSnap.id,
+                ...docSnap.data()
+            }
+            setDetailProduct(product)
             setLoading(false)
         }
         docFetch()
