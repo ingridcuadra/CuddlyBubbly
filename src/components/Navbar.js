@@ -20,10 +20,6 @@ const Navbar = () => {
                   <Link className="nav-link" to="category/3">Nuestras recomendaciones</Link>
                 </li>
               </ul>
-              <form className="d-flex form-search">
-                <input className="form-control me-sm-2" type="text" placeholder="¿Qué estás buscando?" />
-                <button className="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
               <Link to="/cart"><CartWidget /></Link>
             </div>
           </div>
