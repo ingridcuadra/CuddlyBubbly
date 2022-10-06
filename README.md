@@ -1,26 +1,40 @@
-# Cuddly Bubbly
+# Cuddly Bubbly 🧸
 
-Proyecto de **ReactJS** para Coderhouse hecho por [Ingrid Cuadra](https://github.com/ingridcuadra).
-Ecomerce SPA (Single page application). Los estilos generales son traídos de [Bootswatch](https://bootswatch.com/), específicamente del theme Morph. Con css puro se pisaron algunos estilos.
+Proyecto de **ReactJs** para Coderhouse hecho por [Ingrid Cuadra](https://www.linkedin.com/in/ingridcuadra/).
+E-commerce SPA (Single page application).
 
-## Dependencias
+**Cuddly Bubbly** es una tienda de peluches, los cuales vienen en compañía de una caja de infuciones de diferentes sabores. En esta fecha _spooky_ se agregaron más artículos que los acompañan, descubralos de la siguiente manera:
+
+## Cómo obtener una copia funcional 🫖
 
 Este proyecto precisa de las dependencias detalladas en el **package.json**. Para correr la aplicación utilice:
 
-### `npm install`
+* `npm install` para instalar dichas dependencias.
+* `npm start` para inicializar la aplicación.
 
-Para instalar dichas dependencias.
+### Pre-requisitos 📄
 
-### `npm start`
+Descargue e instale [NodeJs](https://nodejs.org/) para comenzar.
 
-Para inicializar la aplicación.
-
-##  Library version
+###  Library version
 
 `react v18.2.0` `react-dom v18.2.0` `react-router-dom v6.4.0`
 
-## Organización del código
+## Construido con 🛠️
 
-*Todavía está en desarrollo*
+HTML, CSS, JavaScript y [ReactJs](https://reactjs.org/).
 
-En la carpeta **src** se encuentra el archivo principal (App.jsx) más el archivo donde se escriben los estilos (index.css). Dentro también se encuentran las carpetas **components** y **utils**, la primera de éstas destinada a guardar todos los componentes que se precisaron para la realización del proyecto, y la segunda a almacenar tanto el archivo que contiene el array de objetos que representan los productos de la tienda como el archivo que devuelve la promise que se ejecuta para semejar la traída de datos de una Base de Datos.
+### Herramientas utilizadas ⚙️
+
+* [Firebase](https://firebase.google.com/) como base de datos en la nube.
+* [Bootswatch](https://bootswatch.com/) para los estilos generales, específicamente el theme Morph. Con css puro se pisaron algunos estilos.
+* [Bootstrap](https://getbootstrap.com/) para dar formato a las cards utilizadas en el proyecto.
+* [Sweet Alert 2](https://sweetalert2.github.io/) para ilustrar las acciones realizadas en la compra del usuario.
+
+## Más proyectos 🖍️
+
+Encuentre más de mis trabajos en mi repositorio de [GitHub](https://github.com/ingridcuadra).
+
+## Agradecimientos especiales 🎁
+
+A mi profesor de ReactJs [Alex Marin Mendez](https://www.linkedin.com/in/alexmarinmendez/), quien nos acompañó en este largo camino. Y a mi tutor [Nicolás Krein Werle](https://www.linkedin.com/in/nicol%C3%A1s-krein-werle-810595191/), quien me ayudó en cada momento de mi aprendizaje.
